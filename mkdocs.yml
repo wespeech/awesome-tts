@@ -1,0 +1,78 @@
+# official tutorial 
+# mkdocs-material: https://squidfunk.github.io/mkdocs-material/
+# mkdocs: https://www.mkdocs.org/user-guide/configuration/
+
+site_name: awesome-tts
+theme:
+  name: material
+  #  favicon: attachment/portrait.png
+  language: zh # 中文，解决中文搜索问题
+  custom_dir: overrides
+  features:
+    - navigation.expand  # 自动展开旁边的目录
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections  # 通过标题加粗的方式呈现，而不是可折叠的目录
+    - navigation.top   # 增加一个 back to top 按钮
+    - search.highlight
+    - search.suggest
+    - search.share
+  palette: 
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+repo_url: https://github.com/we-tts/awesome-tts
+edit_uri: edit/main/docs/
+markdown_extensions: 
+  - attr_list # https://squidfunk.github.io/mkdocs-material/reference/images/
+  - pymdownx.tabbed  # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
+  # - nl2br # newline-to-break 
+  - toc:
+      permalink: '#' # heading anchor 
+      slugify: !!python/name:pymdownx.slugs.uslugify # 解决中文标题解析问题
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  # - pymdownx.emoji:
+      # emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+plugins:
+  - search
+  - git-revision-date
+  - img2fig            # 支持 image caption
+  - roamlinks 
+    #- autolinks 
+  - exclude:
+      glob:
+        - "*.tmp"
+        - "*.pdf"
+        - "*.gz"
+      regex:
+        - '.*\.(tmp|bin|tar)$'
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
