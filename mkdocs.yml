@@ -62,7 +62,7 @@ markdown_extensions:
 plugins:
   - search
   - git-revision-date
-  - img2fig            # 支持 image caption
+  # - img2fig            # 支持 image caption，但这个插件在发布时有bug
   - roamlinks 
     #- autolinks 
   - exclude:
