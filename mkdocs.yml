@@ -1,40 +1,104 @@
-# official tutorial 
+# official tutorial
 # mkdocs-material: https://squidfunk.github.io/mkdocs-material/
 # mkdocs: https://www.mkdocs.org/user-guide/configuration/
 
 site_name: awesome-tts
+site_url: https://we-tts.github.io/awesome-tts/
 theme:
   name: material
   #  favicon: attachment/portrait.png
   language: zh # 中文，解决中文搜索问题
   custom_dir: overrides
   features:
-    - navigation.expand  # 自动展开旁边的目录
+    - navigation.expand # 自动展开旁边的目录
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections  # 通过标题加粗的方式呈现，而不是可折叠的目录
-    - navigation.top   # 增加一个 back to top 按钮
+    - navigation.sections # 通过标题加粗的方式呈现，而不是可折叠的目录
+    - navigation.top # 增加一个 back to top 按钮
     - search.highlight
     - search.suggest
     - search.share
-  palette: 
+    # - header.autohide
+  palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-    - scheme: slate 
+    - scheme: slate
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
 repo_url: https://github.com/we-tts/awesome-tts
 edit_uri: edit/main/docs/
-markdown_extensions: 
-  - attr_list # https://squidfunk.github.io/mkdocs-material/reference/images/
-  - pymdownx.tabbed  # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
-  # - nl2br # newline-to-break 
+nav:
+  - home: 
+      - "index.md"
+      - "book-toc.md"
+  - tts-book:
+      - 前言: "tts-book/前言.md"
+      - 语音合成概述:
+          - "tts-book/语音合成概述.md"
+          - "tts-book/背景和概述.md"
+          - "tts-book/Awesome List.md"
+          - "tts-book/参考书籍.md"
+          - "tts-book/语音相关的会议、期刊、比赛和公司.md"
+          - "tts-book/开源资料.md"
+          - "tts-book/语音合成评价指标.md"
+          - "tts-book/平均意见得分的测评要求与方法.md"
+      - 语音信号基础:
+          - "tts-book/语音信号基础.md"
+          - "tts-book/参考资料.md"
+          - "tts-book/语音基本概念.md"
+          - "tts-book/语言学.md"
+          - "tts-book/音频格式.md"
+          - "tts-book/数字信号处理.md"
+          - "tts-book/其它概念.md"
+      - 语音特征提取:
+          - "tts-book/语音特征提取.md"
+          - "tts-book/预处理.md"
+          - "tts-book/短时傅里叶变换.md"
+          - "tts-book/听觉特性.md"
+          - "tts-book/倒谱分析.md"
+          - "tts-book/常见的声学特征.md"
+          - "tts-book/具体操作.md"
+      - 音库制作和文本前端:
+          - "tts-book/音库制作和文本前端.md"
+          - "tts-book/音库制作.md"
+          - "tts-book/文本前端.md"
+          - "tts-book/总结.md"
+      - 声学模型:
+          - "tts-book/声学模型.md"
+          - "tts-book/Tacotron.md"
+          - "tts-book/FastSpeech.md"
+          - "tts-book/VITS.md"
+      - 声码器:
+          - "tts-book/声码器.md"
+          - "tts-book/Griffin-Lim声码器.md"
+          - "tts-book/STRAIGHT声码器.md"
+          - "tts-book/WORLD声码器.md"
+          - "tts-book/HiFiGAN.md"
+      - 语音合成知识结构:
+          - "tts-book/语音合成知识结构.md"
+          - "tts-book/基本组成.md"
+          - "tts-book/声音转换.md"
+          - "tts-book/多语种语音合成.md"
+          - 进阶:
+              - "tts-book/进阶.md"
+              - "tts-book/高表现力语音合成.md"
+              - "tts-book/个性化语音合成.md"
+              - "tts-book/方言迁移.md"
+              - "tts-book/歌唱合成.md"
+              - "tts-book/语音合成的稳定性.md"
+              - "tts-book/语音合成的效率优化.md"
+      - paper:
+          - "paper/paper.md"
+markdown_extensions:
+  - attr_list # https://squidfunk.github.io/mkdocs-material/reference../images/
+  - pymdownx.tabbed # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
+  # - nl2br # newline-to-break
   - toc:
-      permalink: '#' # heading anchor 
+      permalink: "#" # heading anchor
       slugify: !!python/name:pymdownx.slugs.uslugify # 解决中文标题解析问题
   - admonition
   - codehilite:
@@ -49,7 +113,7 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   # - pymdownx.emoji:
-      # emoji_generator: !!python/name:pymdownx.emoji.to_png
+  # emoji_generator: !!python/name:pymdownx.emoji.to_png
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
@@ -57,14 +121,15 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist
   - pymdownx.tilde
-  - pymdownx.arithmatex:
+  - pymdownx.arithmatex: # latex 支持
       generic: true
+# use_directory_urls: false # https://github.com/stuebersystems/mkdocs-img2fig-plugin/issues/4
 plugins:
   - search
   - git-revision-date
-  # - img2fig            # 支持 image caption，但这个插件在发布时有bug
-  - roamlinks 
-    #- autolinks 
+  - autolinks # TODO
+  - roamlinks
+  # - img2fig            # 支持 image caption，但这个插件有bug
   - exclude:
       glob:
         - "*.tmp"
