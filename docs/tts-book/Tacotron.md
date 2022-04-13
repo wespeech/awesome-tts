@@ -14,7 +14,7 @@
 (/täkōˌträn/): An end-to-end speech synthesis system by
 Google](https://google.github.io/tacotron/).
 
-![Tacotron-2模型结构 ](/image/tacotron2_arch.png)
+![Tacotron-2模型结构 ](../image/tacotron2_arch.png)
 
 ### 声学特征建模网络
 
@@ -32,7 +32,7 @@ $$f_{i,j}=F*\alpha_{i-1}$$
 其中， $\alpha_{i-1}$
 是经过softmax的注意力权重的累加和。位置敏感注意力机制不但综合了内容方面的信息，而且关注了位置特征。解码过程从输入上一解码步或者真实音频的频谱进入解码器预处理网络开始，到线性映射输出该时间步上的频谱帧结束，模型的解码过程如下图所示。
 
-![Tacotron2解码过程 ](/image/tacotron2_decoder.png)
+![Tacotron2解码过程 ](../image/tacotron2_decoder.png)
 
 频谱生成网络的解码器将预处理网络的输出和注意力机制的编码向量做拼接，然后整体送入LSTM中，LSTM的输出用来计算新的编码向量，最后新计算出来的编码向量与LSTM输出做拼接，送入映射层以计算输出。输出有两种形式，一种是频谱帧，另一种是停止符的概率，后者是一个简单二分类问题，决定解码过程是否结束。为了能够有效加速计算，减小内存占用，引入缩减因子r（Reduction
 Factor），即每一个时间步允许解码器预测r个频谱帧进行输出。解码完成后，送入后处理网络处理以生成最终的梅尔频谱，如下式所示。

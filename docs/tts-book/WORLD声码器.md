@@ -26,7 +26,7 @@ Parameter，SP）和非周期信号参数（Aperiodic Parameter，AP）。
 
 WORLD包含3个语音分析模块，语音分析模型包括DIO模块、CheapTrick模块，PLATINUM模块。
 
-![WORLD声码器整体结构](/image/vocoder_world_arch.png)
+![WORLD声码器整体结构](../image/vocoder_world_arch.png)
 
 WORLD可以提取原始波形中的基频F0，基频包络SP和非周期信号AP，这三种声学特征对应三种提取算法：DIO输入波形提取基频，CheapTrick输入基频、波形提取频谱包络，D4C输入基频、频谱包络和波形提取非周期信号。最终，通过这三种声学特征通过最小相位谱与激励信号卷积后，输出恢复的原始波形。
 
@@ -34,7 +34,7 @@ WORLD可以提取原始波形中的基频F0，基频包络SP和非周期信号AP
 
 F0是周期信号最长持续时间的倒数，反过来，周期是基频的整数分之一。基频会产生二次谐波、三次谐波等，最长的周期理论上对应着频率最低的部分，也就是在语谱图上对应最下面的亮线，能量最高的部分。
 
-![基频和谐波](/image/vocoder_pitch_harmonic.png)
+![基频和谐波](../image/vocoder_pitch_harmonic.png)
 
 有很多的算法估计基频F0，可以分为两类：一个是利用时域特征，比如自相关；一个利用频谱特征，比如倒谱cepstrum。WORLD使用DIO估计基频F0，比YIN、SWIPE要快，性能依然较好，DIO分为以下三步。
 
@@ -44,7 +44,7 @@ F0是周期信号最长持续时间的倒数，反过来，周期是基频的整
     reference="fig:vocoder_world_dio1"}。
 
     ![取四个间隔计算候选F0及其置信度
-    ](/image/vocoder_world_dio1.png)
+    ](../image/vocoder_world_dio1.png)
 
 3.  从某个时间点的正弦波中提取出四个周期信号，并计算置信度，也就是标准差。然后选择标准差最低，也就是置信度最高的基波。
 
@@ -52,7 +52,7 @@ F0是周期信号最长持续时间的倒数，反过来，周期是基频的整
 
 声音包含不同频率的信号，覆盖0到18000Hz，每个频率都有其振幅，定义每种频率中波的振幅最高点连线形成的图形为`包络`。频谱包络是个重要的参数，在频率-振幅图中，用平滑的曲线将所有共振峰连接起来，这个平滑的曲线就是频谱包络。
 
-![取四个间隔计算候选F0及其置信度](/image/vocoder_world_sp.png)
+![取四个间隔计算候选F0及其置信度](../image/vocoder_world_sp.png)
 
 提取频谱包络SP的典型算法有线性预测编码（Linear Predictive
 Coding，LPC）和Cepstrum。线性预测编码LPC的原理是用若干个历史语音采样点的加权线性求和去不断逼近当前的语音采样点；Cepstrum则是基于复数倒谱拥有频谱幅度与相位信息的原理，通过对一个信号进行快速傅里叶变换FFT-\>取绝对值-\>取对数-\>相位展开-\>逆快速傅里叶变换IFFT的变换处理，从而得到对应的倒谱图。
@@ -70,7 +70,7 @@ TANDEM-STRAIGHT直接使用周期响应计算声带的振动，而Legacy-STRAIGH
 delay）以避免嗡嗡声。在WORLD中，利用最小相位响应和激励信号的卷积来计算声带的振动，从下图[6.5](#fig:vocoder_world_synthesis){reference-type="ref"
 reference="fig:vocoder_world_synthesis"}，可以看到，WORLD的卷积比STAIGHT要少，因此计算量更少。
 
-![WORLD合成算法](/image/vocoder_world_synthesis.png)
+![WORLD合成算法](../image/vocoder_world_synthesis.png)
 
 ### 使用示例
 
