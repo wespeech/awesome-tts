@@ -9,7 +9,7 @@ FastSpeech实际是将字符或音素映射为中间声学表征，比如梅尔�
 
 ### 模型整体结构
 
-![VITS整体结构 ](../image/vits_arch.png)
+![VITS整体结构 ](../asset/vits_arch.png)
 
 VITS包括三个部分：
 

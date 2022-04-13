@@ -11,7 +11,7 @@ FastSpeech是基于Transformer显式时长建模的声学模型，由微软和�
 相对应地，微软在语音合成领域的论文常常发布在[Microsoft-Speech
 Research](https://speechresearch.github.io/)。
 
-![FastSpeech 2整体结构](../image/fastspeech_arch_paper.png)
+![FastSpeech 2整体结构](../asset/fastspeech_arch_paper.png)
 
 ### 模型结构
 
