@@ -1,6 +1,5 @@
 mkdocs-material==8.1.7
-mkdocs-autolinks-plugin==0.5.0
 mkdocs-roamlinks-plugin==0.1.3
 mkdocs-exclude==1.0.2
 mkdocs-git-revision-date-plugin
-mkdocs-img2fig-plugin
+mkdocs-img2figv2-plugin

@@ -34,65 +34,64 @@ edit_uri: edit/main/docs/
 nav:
   - home:
       - "index.md"
-      - "book-toc.md"
-  - tts-book:
-      - 前言: "tts-book/前言.md"
+  - tts-wiki:
+      - 前言: "tts-wiki/前言.md"
       - 语音合成概述:
-          - "tts-book/语音合成概述.md"
-          - "tts-book/背景和概述.md"
-          - "tts-book/Awesome List.md"
-          - "tts-book/参考书籍.md"
-          - "tts-book/语音相关的会议、期刊、比赛和公司.md"
-          - "tts-book/开源资料.md"
-          - "tts-book/语音合成评价指标.md"
-          - "tts-book/平均意见得分的测评要求与方法.md"
+          - "tts-wiki/语音合成概述.md"
+          - "tts-wiki/背景和概述.md"
+          - "tts-wiki/Awesome List.md"
+          - "tts-wiki/参考书籍.md"
+          - "tts-wiki/语音相关的会议、期刊、比赛和公司.md"
+          - "tts-wiki/开源资料.md"
+          - "tts-wiki/语音合成评价指标.md"
+          - "tts-wiki/平均意见得分的测评要求与方法.md"
       - 语音信号基础:
-          - "tts-book/语音信号基础.md"
-          - "tts-book/参考资料.md"
-          - "tts-book/语音基本概念.md"
-          - "tts-book/语言学.md"
-          - "tts-book/音频格式.md"
-          - "tts-book/数字信号处理.md"
-          - "tts-book/其它概念.md"
+          - "tts-wiki/语音信号基础.md"
+          - "tts-wiki/参考资料.md"
+          - "tts-wiki/语音基本概念.md"
+          - "tts-wiki/语言学.md"
+          - "tts-wiki/音频格式.md"
+          - "tts-wiki/数字信号处理.md"
+          - "tts-wiki/其它概念.md"
       - 语音特征提取:
-          - "tts-book/语音特征提取.md"
-          - "tts-book/预处理.md"
-          - "tts-book/短时傅里叶变换.md"
-          - "tts-book/听觉特性.md"
-          - "tts-book/倒谱分析.md"
-          - "tts-book/常见的声学特征.md"
-          - "tts-book/具体操作.md"
+          - "tts-wiki/语音特征提取.md"
+          - "tts-wiki/预处理.md"
+          - "tts-wiki/短时傅里叶变换.md"
+          - "tts-wiki/听觉特性.md"
+          - "tts-wiki/倒谱分析.md"
+          - "tts-wiki/常见的声学特征.md"
+          - "tts-wiki/具体操作.md"
       - 音库制作和文本前端:
-          - "tts-book/音库制作和文本前端.md"
-          - "tts-book/音库制作.md"
-          - "tts-book/文本前端.md"
-          - "tts-book/总结.md"
+          - "tts-wiki/音库制作和文本前端.md"
+          - "tts-wiki/音库制作.md"
+          - "tts-wiki/文本前端.md"
+          - "tts-wiki/总结.md"
       - 声学模型:
-          - "tts-book/声学模型.md"
-          - "tts-book/Tacotron.md"
-          - "tts-book/FastSpeech.md"
-          - "tts-book/VITS.md"
+          - "tts-wiki/声学模型.md"
+          - "tts-wiki/Tacotron.md"
+          - "tts-wiki/FastSpeech.md"
+          - "tts-wiki/VITS.md"
       - 声码器:
-          - "tts-book/声码器.md"
-          - "tts-book/Griffin-Lim声码器.md"
-          - "tts-book/STRAIGHT声码器.md"
-          - "tts-book/WORLD声码器.md"
-          - "tts-book/Neural Homomorphic Vocoder (NHV).md"
-          - "tts-book/HiFiGAN.md"
+          - "tts-wiki/声码器.md"
+          - "tts-wiki/Griffin-Lim声码器.md"
+          - "tts-wiki/STRAIGHT声码器.md"
+          - "tts-wiki/WORLD声码器.md"
+          - "tts-wiki/Neural Homomorphic Vocoder (NHV).md"
+          - "tts-wiki/HiFiGAN.md"
       - 语音合成知识结构:
-          - "tts-book/语音合成知识结构.md"
-          - "tts-book/基本组成.md"
-          - "tts-book/声音转换.md"
-          - "tts-book/多语种语音合成.md"
+          - "tts-wiki/语音合成知识结构.md"
+          - "tts-wiki/基本组成.md"
+          - "tts-wiki/声音转换.md"
+          - "tts-wiki/多语种语音合成.md"
           - 进阶:
-              - "tts-book/进阶.md"
-              - "tts-book/高表现力语音合成.md"
-              - "tts-book/个性化语音合成.md"
-              - "tts-book/方言迁移.md"
-              - "tts-book/歌唱合成.md"
-              - "tts-book/语音合成的稳定性.md"
-              - "tts-book/语音合成的效率优化.md"
-      - reference: "tts-book/reference.md"
+              - "tts-wiki/进阶.md"
+              - "tts-wiki/高表现力语音合成.md"
+              - "tts-wiki/个性化语音合成.md"
+              - "tts-wiki/方言迁移.md"
+              - "tts-wiki/歌唱合成.md"
+              - "tts-wiki/语音合成的稳定性.md"
+              - "tts-wiki/语音合成的效率优化.md"
+      - reference: "tts-wiki/reference.md"
   - 论文:
       - "paper/paper.md"
   - 资讯:
@@ -107,6 +106,7 @@ markdown_extensions:
   - toc:
       permalink: "#" # heading anchor
       slugify: !!python/name:pymdownx.slugs.uslugify # 解决中文标题解析问题
+
   - admonition
   - codehilite:
       guess_lang: false
@@ -137,11 +137,11 @@ markdown_extensions:
       generic: true
 # use_directory_urls: false # https://github.com/stuebersystems/mkdocs-img2fig-plugin/issues/4
 plugins:
-  - search
+  - search:
+      separator: '[\s\-\.]'
   - git-revision-date
-  #   - autolinks # TODO
+  - img2figv2 # 应当先与 roamlinks
   - roamlinks
-  # - img2fig            # 支持 image caption，但这个插件有bug
   - exclude:
       glob:
         - "*.tmp"

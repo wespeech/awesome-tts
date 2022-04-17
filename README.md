@@ -1,6 +1,8 @@
 # awesome-tts
 
-请访问[🎉文档](https://we-tts.github.io/awesome-tts/)
+- 请访问[🎉文档](https://wespeech.github.io/awesome-tts/)
+- [国内gitee镜像文档](https://wespeech.gitee.io/awesome-tts/)
+
 
 本地访问
 1. 方法1: `pip install -r requirements.txt` 然后 `mkdocs serve`
