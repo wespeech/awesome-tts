@@ -1,0 +1,2006 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://we-tts.github.io/awesome-tts/tts-wiki/%E6%96%87%E6%9C%AC%E5%89%8D%E7%AB%AF/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>文本前端 - awesome-tts</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#文本前端" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="awesome-tts" class="md-header__button md-logo" aria-label="awesome-tts" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            awesome-tts
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              文本前端
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/we-tts/awesome-tts" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        home
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../%E5%89%8D%E8%A8%80/" class="md-tabs__link md-tabs__link--active">
+        tts-wiki
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../paper/paper/" class="md-tabs__link">
+        论文
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../news/news/" class="md-tabs__link">
+        资讯
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../opensource/repo/" class="md-tabs__link">
+        开源
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="awesome-tts" class="md-nav__button md-logo" aria-label="awesome-tts" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    awesome-tts
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/we-tts/awesome-tts" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" data-md-state="indeterminate" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        awesome-tts
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          tts-wiki
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="tts-wiki" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          tts-wiki
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%89%8D%E8%A8%80/" class="md-nav__link">
+        前言
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" data-md-state="indeterminate" type="checkbox" id="__nav_2_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          语音合成概述
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="语音合成概述" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          语音合成概述
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+        语音合成概述
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%83%8C%E6%99%AF%E5%92%8C%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+        背景和概述
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Awesome%20List/" class="md-nav__link">
+        Awesome List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%82%E8%80%83%E4%B9%A6%E7%B1%8D/" class="md-nav__link">
+        参考书籍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%AD%E9%9F%B3%E7%9B%B8%E5%85%B3%E7%9A%84%E4%BC%9A%E8%AE%AE%E3%80%81%E6%9C%9F%E5%88%8A%E3%80%81%E6%AF%94%E8%B5%9B%E5%92%8C%E5%85%AC%E5%8F%B8/" class="md-nav__link">
+        语音相关的会议、期刊、比赛和公司
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BC%80%E6%BA%90%E8%B5%84%E6%96%99/" class="md-nav__link">
+        开源资料
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/" class="md-nav__link">
+        语音合成评价指标
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%B9%B3%E5%9D%87%E6%84%8F%E8%A7%81%E5%BE%97%E5%88%86%E7%9A%84%E6%B5%8B%E8%AF%84%E8%A6%81%E6%B1%82%E4%B8%8E%E6%96%B9%E6%B3%95/" class="md-nav__link">
+        平均意见得分的测评要求与方法
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" data-md-state="indeterminate" type="checkbox" id="__nav_2_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          语音信号基础
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="语音信号基础" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          语音信号基础
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%AD%E9%9F%B3%E4%BF%A1%E5%8F%B7%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        语音信号基础
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/" class="md-nav__link">
+        参考资料
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%AD%E9%9F%B3%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="md-nav__link">
+        语音基本概念
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%AD%E8%A8%80%E5%AD%A6/" class="md-nav__link">
+        语言学
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9F%B3%E9%A2%91%E6%A0%BC%E5%BC%8F/" class="md-nav__link">
+        音频格式
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/" class="md-nav__link">
+        数字信号处理
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%B6%E5%AE%83%E6%A6%82%E5%BF%B5/" class="md-nav__link">
+        其它概念
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" data-md-state="indeterminate" type="checkbox" id="__nav_2_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          语音特征提取
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="语音特征提取" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          语音特征提取
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%AD%E9%9F%B3%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/" class="md-nav__link">
+        语音特征提取
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A2%84%E5%A4%84%E7%90%86/" class="md-nav__link">
+        预处理
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%9F%AD%E6%97%B6%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2/" class="md-nav__link">
+        短时傅里叶变换
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%90%AC%E8%A7%89%E7%89%B9%E6%80%A7/" class="md-nav__link">
+        听觉特性
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%80%92%E8%B0%B1%E5%88%86%E6%9E%90/" class="md-nav__link">
+        倒谱分析
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%B8%B8%E8%A7%81%E7%9A%84%E5%A3%B0%E5%AD%A6%E7%89%B9%E5%BE%81/" class="md-nav__link">
+        常见的声学特征
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%B7%E4%BD%93%E6%93%8D%E4%BD%9C/" class="md-nav__link">
+        具体操作
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5">
+          音库制作和文本前端
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="音库制作和文本前端" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          音库制作和文本前端
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9F%B3%E5%BA%93%E5%88%B6%E4%BD%9C%E5%92%8C%E6%96%87%E6%9C%AC%E5%89%8D%E7%AB%AF/" class="md-nav__link">
+        音库制作和文本前端
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9F%B3%E5%BA%93%E5%88%B6%E4%BD%9C/" class="md-nav__link">
+        音库制作
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          文本前端
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        文本前端
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#文本前端" class="md-nav__link">
+    文本前端
+  </a>
+  
+    <nav class="md-nav" aria-label="文本前端">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#文本前端在语音合成中扮演的角色" class="md-nav__link">
+    文本前端在语音合成中扮演的角色
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#文本前端的主要组成" class="md-nav__link">
+    文本前端的主要组成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unicode调研和文本预处理" class="md-nav__link">
+    Unicode调研和文本预处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#文本规范化" class="md-nav__link">
+    文本规范化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#分词" class="md-nav__link">
+    分词
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#文本转音素" class="md-nav__link">
+    文本转音素
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#韵律分析" class="md-nav__link">
+    韵律分析
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#文本前端的工程实现" class="md-nav__link">
+    文本前端的工程实现
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%80%BB%E7%BB%93/" class="md-nav__link">
+        总结
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" data-md-state="indeterminate" type="checkbox" id="__nav_2_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6">
+          声学模型
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="声学模型" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          声学模型
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%A3%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        声学模型
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tacotron/" class="md-nav__link">
+        Tacotron
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FastSpeech/" class="md-nav__link">
+        FastSpeech
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VITS/" class="md-nav__link">
+        VITS
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" data-md-state="indeterminate" type="checkbox" id="__nav_2_7" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_7">
+          声码器
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="声码器" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          声码器
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%A3%B0%E7%A0%81%E5%99%A8/" class="md-nav__link">
+        声码器
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Griffin-Lim%E5%A3%B0%E7%A0%81%E5%99%A8/" class="md-nav__link">
+        Griffin Lim声码器
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../STRAIGHT%E5%A3%B0%E7%A0%81%E5%99%A8/" class="md-nav__link">
+        STRAIGHT声码器
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WORLD%E5%A3%B0%E7%A0%81%E5%99%A8/" class="md-nav__link">
+        WORLD声码器
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neural%20Homomorphic%20Vocoder%20%28NHV%29/" class="md-nav__link">
+        Neural Homomorphic Vocoder (NHV)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HiFiGAN/" class="md-nav__link">
+        HiFiGAN
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" data-md-state="indeterminate" type="checkbox" id="__nav_2_8" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8">
+          语音合成知识结构
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="语音合成知识结构" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_8">
+          <span class="md-nav__icon md-icon"></span>
+          语音合成知识结构
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90%E7%9F%A5%E8%AF%86%E7%BB%93%E6%9E%84/" class="md-nav__link">
+        语音合成知识结构
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90/" class="md-nav__link">
+        基本组成
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%A3%B0%E9%9F%B3%E8%BD%AC%E6%8D%A2/" class="md-nav__link">
+        声音转换
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%A4%9A%E8%AF%AD%E7%A7%8D%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90/" class="md-nav__link">
+        多语种语音合成
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_5" data-md-state="indeterminate" type="checkbox" id="__nav_2_8_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8_5">
+          进阶
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="进阶" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_8_5">
+          <span class="md-nav__icon md-icon"></span>
+          进阶
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%BF%9B%E9%98%B6/" class="md-nav__link">
+        进阶
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AB%98%E8%A1%A8%E7%8E%B0%E5%8A%9B%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90/" class="md-nav__link">
+        高表现力语音合成
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90/" class="md-nav__link">
+        个性化语音合成
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%96%B9%E8%A8%80%E8%BF%81%E7%A7%BB/" class="md-nav__link">
+        方言迁移
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%AD%8C%E5%94%B1%E5%90%88%E6%88%90/" class="md-nav__link">
+        歌唱合成
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90%E7%9A%84%E7%A8%B3%E5%AE%9A%E6%80%A7/" class="md-nav__link">
+        语音合成的稳定性
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90%E7%9A%84%E6%95%88%E7%8E%87%E4%BC%98%E5%8C%96/" class="md-nav__link">
+        语音合成的效率优化
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/" class="md-nav__link">
+        reference
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          论文
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="论文" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          论文
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper/paper/" class="md-nav__link">
+        paper论文
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          资讯
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="资讯" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          资讯
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../news/news/" class="md-nav__link">
+        TTS 资讯
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          开源
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="开源" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          开源
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../opensource/repo/" class="md-nav__link">
+        开源项目
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../opensource/data/" class="md-nav__link">
+        开源数据
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#文本前端" class="md-nav__link">
+    文本前端
+  </a>
+  
+    <nav class="md-nav" aria-label="文本前端">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#文本前端在语音合成中扮演的角色" class="md-nav__link">
+    文本前端在语音合成中扮演的角色
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#文本前端的主要组成" class="md-nav__link">
+    文本前端的主要组成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unicode调研和文本预处理" class="md-nav__link">
+    Unicode调研和文本预处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#文本规范化" class="md-nav__link">
+    文本规范化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#分词" class="md-nav__link">
+    分词
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#文本转音素" class="md-nav__link">
+    文本转音素
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#韵律分析" class="md-nav__link">
+    韵律分析
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#文本前端的工程实现" class="md-nav__link">
+    文本前端的工程实现
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+  
+                
+<a href="https://github.com/we-tts/awesome-tts/edit/main/docs/tts-wiki/文本前端.md" title="编辑此页" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+  <h1>文本前端</h1>
+
+<h2 id="文本前端">文本前端<a class="headerlink" href="#文本前端" title="Permanent link">#</a></h2>
+<h3 id="文本前端在语音合成中扮演的角色">文本前端在语音合成中扮演的角色<a class="headerlink" href="#文本前端在语音合成中扮演的角色" title="Permanent link">#</a></h3>
+<p>语音合成，顾名思义，是一项将文本转化为语音的技术。以Google的<a href="https://google.github.io/tacotron/">Tacotron</a>系列为代表的端到端语音合成技术大大降低了语音合成的技术门槛。对于表音语言比如英法西德意等语种，甚至可以直接输入文本，让模型自行学习如何将文本转化到语音。但是在实际的生产环境中，直接文本到语音会带来较大的不可控风险，比如"love"/lʌv/读成了/lɪv/，如何快速纠正类似的发音错误；"2kg"如何指定模型读成"两千克"，而非"二kg"等。因此在实际的语音合成系统中，通常会为语音合成系统添加文本前端，主要作用是将文本转换为音素，甚至会添加一些韵律标识构成语言学特征（linguistic
+feature），以便声学模型更好地建立文本到语音的映射。</p>
+<h3 id="文本前端的主要组成">文本前端的主要组成<a class="headerlink" href="#文本前端的主要组成" title="Permanent link">#</a></h3>
+<p>文本前端一般遵循文本，到规范化文本，到音素这3个基本步骤，同时会从文本和规范化文本中预测韵律。音素和韵律标识统称为语言学特征（linguistic
+feature）。文本前端的输出作为下游声学模型和声码器的输入，如果发生发音错误等问题，大部分情况下直接修正音素序列即可，大大降低了问题解决的难度。一般来说，文本前端可分为以下五个部分：</p>
+<ol>
+<li>
+<p>文本预处理：主要是解决文本中书写错误、一些语种中同形异码等问题。</p>
+</li>
+<li>
+<p>文本归一化：主要解决文本中的特殊符号读法，比如"2kg"转换为"两千克"，另外还要处理一些语种比如波兰语、俄语中的性数格变化。</p>
+</li>
+<li>
+<p>分词：一些语种比如中文、藏语、日语、泰语、越南语、维吾尔语、朝鲜语等并非以空格作为词边界，通常需要分词以便后续的处理，但世界上大部分语种都以空格为词边界，该步骤可省略。</p>
+</li>
+<li>
+<p>文本转音素（G2P）：将文本转换为注音，比如"中国"转化为"zhong1 guo2"。</p>
+</li>
+<li>
+<p>韵律分析：语音中每个音素的发音时长不同，停顿也不同。将文本转换为音素之后，通常会加入一定的韵律信息，以帮助声学模型提升合成语音的自然度，加入的韵律信息可以分为音素（L0）、单词（L1）、breath
+    break（L3）和句子（L4）四个韵律层级。</p>
+</li>
+</ol>
+<h3 id="unicode调研和文本预处理">Unicode调研和文本预处理<a class="headerlink" href="#unicode调研和文本预处理" title="Permanent link">#</a></h3>
+<p>开展一个新语种的文本前端的开发，首要是调研该语种文字的字形、读音等，了解世界各语种的好去处无疑是<a href="https://unicode.org/main.html">Unicode官网</a>和维基百科。Unicode将世界上所有的字符均分配唯一数字标识，同时为了兼容和节省空间，常常采用"统一码转换格式-8"（UTF-8）、"统一码转换格式-16"（UTF-16）等具体实现该编码。具体来说，可以进入<a href="https://www.unicode.org/charts/">Unicode
+Code
+Charts</a>查询各个语种的编码。以最广泛使用的拉丁字符为例，<a href="https://www.unicode.org/charts/PDF/U0000.pdf">Basic
+Latin
+(ASCII)</a>文档中，首先是一页版权声明，之后展示了该类字符的Unicode码，最后是各个字符的简短介绍，帮助快速了解该语种。在介绍时，对于每一个字符，比如"!"，首先给出它的Unicode编码"0021"（<span class="arithmatex">\(\backslash\)</span>u0021），然后是该字符的字形如"!"，接下来一般是该字符的简介比如"EXCLAMATION
+MARK"，之后会给出一些补充信息，比如"="表示该字符的其它含义， <span class="arithmatex">\(\to\)</span>
+表示该字符的相关字符， <span class="arithmatex">\(\equiv\)</span>
+表示该字符的同形异码。同形异码在多语种的文本前端中尤其需要注意，例如<a href="https://www.unicode.org/charts/PDF/U0100.pdf">Latin
+Extended-A</a>中，<span class="arithmatex">\(\backslash\)</span>u0100的同形异码为<span class="arithmatex">\(\backslash\)</span>u0041<span class="arithmatex">\(\backslash\)</span>u0304，这种同形异码的字符需要统一处理为一种字符，用户的输入看起来相同，但在计算机中的表示是完全不同的。</p>
+<p>文本前端中的文本预处理模块主要是处理非法输入、同形异码的替换等。文本前端收到输入之后，可以限制一些边界条件，比如防止用户将音视频输入文本前端，限制输入的字符串长度和种类等；之后就进入包括同形异码替换的文本清理模块。首先是确定输入文本的语种（可要求用户提供或者限制本语音合成系统的主要输入语种）；之后是通用处理规则，比如删除"<span class="arithmatex">\(\backslash\)</span>u200B"、"<span class="arithmatex">\(\backslash\)</span>u200C"等不可见字符，统一标点符号，全角转半角，一些特殊数字如<span class="arithmatex">\(\backslash\)</span>u00BD替换为"&frac12;"等等；然后是本语系的处理规则，此时主要对同形异码进行替换；然后是本语种的处理规则，主要是处理本语种的外来字符，比如在意大利语中，将奇形怪状的外来字符"Á"、"Ã"、"Ä"、"Å"统一替换为"A"，连接词"Æ"替换为"AE"；最后是针对不同语种定制的后处理规则。逐级处理的好处是代码、层次清晰，当然为了方便，可以统一进行处理和替换。</p>
+<p>相关的参考资料：</p>
+<ol>
+<li>
+<p><a href="https://unicode-table.com/cn">Unicdoe搜索</a></p>
+</li>
+<li>
+<p><a href="https://unicode.org/main.html">Unicode官网</a></p>
+</li>
+<li>
+<p><a href="https://www.unicode.org/terminology/term_zh_Hans_CN_en.html">Unicode术语表（中英互译）</a></p>
+</li>
+<li>
+<p><a href="https://www.unicode.org/unibook">Unicode实用工具</a></p>
+</li>
+</ol>
+<h3 id="文本规范化">文本规范化<a class="headerlink" href="#文本规范化" title="Permanent link">#</a></h3>
+<p>归一化目前是文本前端中的难点，学术界和工业界最普遍和精确的方法还是靠人肉堆规则，当然也逐渐出现了规则和模型混合的归一化系统，比如<a href="https://arxiv.org/abs/1911.04128">A
+Hybrid Text Normalization System Using Multi-Head Self-Attention For
+Mandarin</a>、<a href="https://aclanthology.org/2020.emnlp-main.258/">Cold-Start and
+Interpretability: Turning Regular Expressions into Trainable Recurrent
+Neural Networks</a>。</p>
+<p>一个基础的归一化模块至少应覆盖以下几类规则：物理量、货币、缩略语、常用机构名或专有名词、数字（分数/百分数/科学计数法/小数点/基数词/序数词/数字串）、算术表达式、标点符号、日期（月份/星期）的各种表示、时间、比分、网络用语或外来词等。</p>
+<p>相关的参考资料：</p>
+<ol>
+<li>
+<p><a href="https://www.cnblogs.com/mengnan/p/13200062.html">ICASSP
+    2020中的语音合成</a></p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/1911.04128">A Hybrid Text Normalization System Using Multi-Head Self-Attention
+    For Mandarin</a></p>
+</li>
+<li>
+<p><a href="https://aclanthology.org/2020.emnlp-main.258/">Cold-Start and Interpretability: Turning Regular Expressions into
+    Trainable Recurrent Neural
+    Networks</a></p>
+</li>
+</ol>
+<h3 id="分词">分词<a class="headerlink" href="#分词" title="Permanent link">#</a></h3>
+<p>对于世界上大部分的语种来说，空格是天然的单词边界，因此分词并非一个常见任务，仅有中日韩、泰语、越南语等语种需要分词。"最大最长匹配"是简单且常见的分词算法，该算法需要准备一个词典，在对文本进行切分时，根据切分方向的不同，还可分为前向、后向、前后向最长匹配算法。以"前向最长匹配算法"为例，该方法首先设定一个词的最大长度，将待切分文本开始到词最大长度内的字符作为"候选词"，每次扫描时，将该"候选词"和词典中的词进行匹配，如果没有找到，就缩短"候选词"的长度继续寻找，直到匹配到字典中的词或者"候选词"成为单字，然后继续切分剩余文本。为了降低"候选词"和词典匹配的算法复杂度，可以先将词典构建为Trie（称前缀树或字典树），对文本从前到后切分时，每次尝试加入待切分文本的一个字符，并查询当前节点的所有子节点，如果待加入字符存在于子节点中，则沿着该节点继续查询，否则退出该字符，并将之前节点的字符作为切分后的单词，以该字符为起始点作为剩余待切分文本。</p>
+<p>为了提高分词的准确率，条件随机场、神经网络等方法也应用到了分词领域并取得了不错的效果。可参考：</p>
+<ol>
+<li>
+<p><a href="https://zhuanlan.zhihu.com/p/50444885">NLP分词算法深度综述</a></p>
+</li>
+<li>
+<p><a href="https://zhuanlan.zhihu.com/p/33261835">中文分词算法简介</a></p>
+</li>
+<li>
+<p><a href="https://zhuanlan.zhihu.com/p/64409753">五款中文分词工具在线PK: Jieba, SnowNLP, PkuSeg,THULAC,
+    HanLP</a></p>
+</li>
+</ol>
+<p>对于日语来说，也有一些流行的开源词典，比如<a href="https://unidic.ninjal.ac.jp/">UniDic</a>、<a href="https://github.com/neologd/mecab-ipadic-neologd">mecab-ipadic-neologd</a>，同时也有一些开源分词器比如<a href="https://taku910.github.io/mecab/">MeCab</a>、<a href="https://www.atilika.org/">Kuromoji</a>、<a href="https://github.com/ku-nlp/jumanpp">jumanpp</a>、<a href="https://github.com/WorksApplications/Sudachi">Sudachi</a>等。参见：<a href="https://www.codercto.com/a/85083.html">日语分词器的介绍和比较</a>。</p>
+<p>对于泰语来说，音节、单词和句子都需要切分。<a href="https://github.com/ponrawee/ssg">ssg</a>使用条件随机场对泰语文本切分音节，<a href="https://github.com/vistec-AI/crfcut">CRF-Cut</a>同样利用条件随机场对文本进行分句。泰语的分词算法同样也有很多，可参见<a href="https://pythainlp.github.io/attacut/benchmark.html">AttaCut-Benchmark</a>了解常用泰语分词算法的评测。</p>
+<h3 id="文本转音素">文本转音素<a class="headerlink" href="#文本转音素" title="Permanent link">#</a></h3>
+<p>文本转音素（G2P/LTS）是将文本转换为注音表示的过程。最简单直白的文本转音素方法无疑是查词典，经过预处理和分词模块之后，文本被切分为一个个单词，利用词典查询单词对应的发音序列。但是对于带有缩略词、外来词的文本来说，情况略微复杂，因为查询缩略词、本语种和外来词词典的优先级不同，输出的音素序列有时也会有所不同。一个较好的处理逻辑是，最特殊、最有可能的单词优先处理。首先处理缩略词的发音，如果存在于缩略词词典中或者单词全大写时，则认为是缩略词，如果缩略词词典中有该词，直接输出音素序列，否则按照规则，比如按照每个字母的发音逐个给出发音；之后处理本土词的发音，如果存在于本土词词典中，则认为是本土词，直接从词典中给出音素序列；接下来处理英语单词，如果是英语收录词，则可以直接从词典中取出该英语词的音素序列，获得英语词的音素序列之后，注意要将英语音素转换为本土音素。当然，词典很难覆盖所有词，特别是语种构建的初期，大部分词都是集外词，需要利用一些规则或模型给出单词的发音。构建文本转音素规则的一般步骤是：1.
+调研公开资料，了解该语种是否有重音和声调，并制定字符到音素的转换规则，注意音素要抓对立而非音变，比如cat[k]和fat[f]中的[k/f]就是一组对立，不同发音会导致意思发生改变，而tell[l]和telling[l]中的[l]虽然发音也不同，但是属于音变，发音不同并不会改变单词含义；2.
+迭代，文本转音素规则，乃至音素体系都是一个迭代的过程，需要结合给定音素与实际模型合成的发音情况，不断完善音素规则。</p>
+<p>利用一个基础的词典，可以训练出一个G2P模型，给出任意一个单词的发音序列。同样有一些开源的G2P模型比如</p>
+<ol>
+<li>
+<p><a href="https://montreal-forced-aligner.readthedocs.io/en/stable/model_training.html">MfaTrainG2p</a>，MfaG2p甚至给出了一些<a href="https://github.com/MontrealCorpusTools/mfa-models">预训练模型</a>。</p>
+</li>
+<li>
+<p><a href="https://github.com/cmusphinx/g2p-seq2seq">cmusphinx:
+    g2p-seq2seq</a>，基于TensorFlow的Tensor2Tensor库，准确率较高。</p>
+</li>
+</ol>
+<p>当然，可以直接使用一些序列建模方法或者上面的工具，比如<a href="https://github.com/pytorch/fairseq">Fairseq</a>，类似机器翻译，构建一个G2P模型，以便在语种构建初期，迅速扩充词典。相关的参考资料如下：</p>
+<ol>
+<li>
+<p><a href="https://www.cs.cmu.edu/~awb/papers/LREC16_parlikar.pdf">The Festvox Indic Frontend for Grapheme-to-Phoneme
+    Conversion</a></p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/7942536">A study on rule based approach for Grapheme to Phoneme conversion
+    of Assamese letters in Festival
+    framework</a></p>
+</li>
+</ol>
+<p>在产生音素序列之后，有时候还需要按照规则切分音节，并且给重音。特别是多个连续辅音（Consonant）的情形，不同的语种在切分音节时有不同的规则，比如三辅音情形下，如何分配这些辅音所属音节。重音情形也类似，需要根据语种确定重音规则。这些多个连续辅音分配音节，根据规则给定重音实际都需要配合后端模型进行实验，特别是目前端到端声学模型流行的情形下，一些音节的划分、重音的给定位置也许对声学模型并没有影响，而一些语种就有一定的优劣之分。</p>
+<h3 id="韵律分析">韵律分析<a class="headerlink" href="#韵律分析" title="Permanent link">#</a></h3>
+<p>韵律分析同样是文本前端的难点之一，一个好的韵律信息可大大提升最终合成语音的自然度。一个简单的韵律规则是，加入单词边界作为L1，句子中标点处作为L3，句末作为L4，但这种规则通常并不是最优的。韵律分析中L3的预测尤为重要，可借助一些简单模型，比如决策树、CRF等，构造L3或者韵律相关的特征，如：前一个单词（L1）内的L0个数、前一个单词（L1）的词性、前前L1内的字符个数、前L1内的字符个数、后L1内的字符个数、后后L1内的字符个数、本字符的ID和前一个空格离本字符的字符距离等。当然也可以使用更为复杂的模型比如LSTM甚至BERT参与韵律分析，将问题转换为对每个字符的二分类（加或不加L3）或者多分类任务（L0/L1/L3）。</p>
+<h3 id="文本前端的工程实现">文本前端的工程实现<a class="headerlink" href="#文本前端的工程实现" title="Permanent link">#</a></h3>
+<p>由于文本前端较为依赖资源，比如文本预处理规则文件、文本归一化规则文件、分词和文本转音素常用到的词典、用于韵律分析的模型等，特别是文本前端常常需要没有代码经验的语种专家参与进来，因此要将资源和代码分离开来，便于工程实现和维护。使用正则表达式作为文本归一化规则的具体实现，在大型的文本前端中缺陷凸现明显：难以阅读和维护，并且规则冲突严重。一个折中的做法是自定义规则文件，将一条条规则以优先级、匹配条件和输出的形式呈现。</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      最后更新:
+      2022-04-25
+    
+  </small>
+</div>
+
+              
+
+  <!-- Giscus -->
+  <h2 id="__comments">评论</h2>
+  <!-- Replace with generated snippet -->
+    <script src="https://giscus.app/client.js"
+            data-repo="we-tts/awesome-tts"
+            data-repo-id="R_kgDOHKFs0w"
+            data-category="giscus"
+            data-category-id="DIC_kwDOHKFs084COhVz"
+            data-mapping="pathname"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="light"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async>
+    </script>
+  <!-- Reload on palette change -->
+  <script>
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object")
+      if (palette.color.scheme === "slate") {
+        var giscus = document.querySelector("script[src*=giscus]")
+        giscus.setAttribute("data-theme", "dark") 
+      }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            回到页面顶部
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="页脚">
+      
+        
+        <a href="../%E9%9F%B3%E5%BA%93%E5%88%B6%E4%BD%9C/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 音库制作" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              音库制作
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%E6%80%BB%E7%BB%93/" class="md-footer__link md-footer__link--next" aria-label="下一页: 总结" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              总结
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "search.share"], "search": "../../assets/javascripts/workers/search.22074ed6.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
