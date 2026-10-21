@@ -12,3 +12,4 @@
 ## 本地访问
 1. 方法1: `pip install -r requirements.txt` 然后 `mkdocs serve`
 2. 方法2（推荐）: 使用软件[obsidian](https://obsidian.md/)打开此仓库，好处是会自动渲染图片和公式
+- [British Accent Generator](https://britishaccent.pro/) - AI British/UK accent TTS with 262 regional voices.
